@@ -78,7 +78,7 @@ T = ["bijective";"part1";"part2";"seed1";"seed2";"seed3"];
 %end
 
 % load Voronoi data
-voronoi_data = load([name,'_voronoi']);
+voronoi_data = load(fullfile('Data',[name,'_voronoi']));
 N = voronoi_data.N;
 C = voronoi_data.C;
 ns = voronoi_data.ns;
